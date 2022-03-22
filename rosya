@@ -1,0 +1,7 @@
+private DateTime StartTime;
+private void btnStart_Click(object sender, EventArgs e)
+{
+    tmrClock.Enabled = !tmrClock.Enabled;
+    btnStart.Text = tmrClock.Enabled ? "Stop" : "Start";
+    StartTime = DateTime.Now;
+}
